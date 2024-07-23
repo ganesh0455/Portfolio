@@ -1,0 +1,11 @@
+.my-toast {
+  background-color: rgba(0, 245, 245, 0.9);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.time-fire {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+}
