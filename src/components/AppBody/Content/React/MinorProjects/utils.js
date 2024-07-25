@@ -6,7 +6,7 @@ export const minorProjectsList = [
     },
     {
         id: 2,
-        taskName: "Guess the number",
-        combinedName: "GuessTheNumber"
+        taskName: "React Concepts",
+        combinedName: "ReactConcepts"
     },
 ];

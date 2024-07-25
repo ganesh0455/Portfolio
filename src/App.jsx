@@ -6,7 +6,8 @@ import ReactdashBoard from "./components/AppBody/Content/React";
 import ReactMinorProjects from "./components/AppBody/Content/React/MinorProjects";
 import JsMinorProjects from "./components/AppBody/Content/JavaScript/MinorProjects";
 import JsMajorProjects from "./components/AppBody/Content/JavaScript/MajorProjects";
-import ExpenseTracker from "./components/AppBody/Content/React/MinorProjects/ExpenseTracker";
+import ExpenseTracker from "./components/AppBody/Content/React/MinorProjects/1.ExpenseTracker";
+import ReactConcepts from "./components/AppBody/Content/React/MinorProjects/Assignment - React Concepts";
 
 export default function App() {
 
@@ -46,6 +47,10 @@ export default function App() {
         {
           path: "/ReactDashboard/minorProjects/ExpencseTracker/:projectId",
           element: <ExpenseTracker />
+        },
+        {
+          path: "/ReactDashboard/minorProjects/ReactConcepts/:projectId",
+          element: <ReactConcepts />
         },
         {
           path: "/ReactDashboard/majorProjects",

@@ -1,3 +1,4 @@
+import Card from "./Card";
 import { expenses } from "./constants";
 import ExpenseItem from "./ExpenseItem";
 
@@ -8,7 +9,7 @@ const ExpenseTracker = () => {
       <div className="py-5 px-4 w-full flex items-center">
         <span className="text-white text-xl m-auto">Expense Tracker</span>
       </div>
-      <div className="w-[100%] h-[100%] bg-gradient-to-tl from-[#3333331a] to-[#4d4d4d23] rounded-[16px] flex justify-center items-center flex-col">
+      <Card className="w-[60%] h-[80%] bg-gradient-to-tl from-[#3333331a] to-[#4d4d4d23] flex justify-center items-center flex-col">
         <ExpenseItem
           title={expenses[0].title}
           amount={expenses[0].amount}
@@ -34,7 +35,7 @@ const ExpenseTracker = () => {
         >
         </ExpenseItem>
 
-      </div>
+      </Card>
     </div>
   )
 }
