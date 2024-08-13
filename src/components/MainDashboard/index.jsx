@@ -1,6 +1,6 @@
-import { Outlet } from "react-router-dom"
-import AppSidebar from "../AppBody/AppSidebar"
-import AppHeader from "../AppHeader"
+import { Outlet } from "react-router-dom";
+import AppSidebar from "../AppBody/AppSidebar";
+import AppHeader from "../AppHeader";
 import { useState } from "react";
 
 const MainDashboard = () => {

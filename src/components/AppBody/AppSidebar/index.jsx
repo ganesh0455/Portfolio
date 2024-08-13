@@ -1,21 +1,22 @@
 import { useNavigate } from "react-router-dom";
 
 import "./index.css";
-import Ganesh from "../../../assets/images/Ganesh.jpg";
 import { Link } from "react-router-dom";
+import { profileDetails } from "../../../assets/Constants/profiles";
 
 const AppSidebar = () => {
   const navigate = useNavigate();
+  const { name } = profileDetails;
 
   const handleName = () => {
     navigate("/motivation");
   }
-  
+
   return (
     <div className="flex flex-col relative z-40 left-0 top-0 lg:translate-x-0 transform h-full overflow-y-scroll lg:overflow-y-auto no-scrollbar lg:w-20 w-64  lg:sidebar-expanded:!w-64 2xl:!w-64 flex-shrink-0 motion-reduce:transition-none dark:border-zinc-800 border-zinc-200 border-r p-4 transition-all duration-200 ease-in-out -translate-x-64 bg-black">
       <div className="w-full cursor-pointer py-5 flex gap-6" onClick={handleName}>
-        <img className="w-10 h-10 rounded-full" src={Ganesh} alt="profile-pic" />
-        <span className="text-[26px] fire font-effect-fire">Ganesh V</span>
+        {/* <img className="w-10 h-10 rounded-full" src={Ganesh} alt="profile-pic" /> */}
+        <span className="text-[26px] fire font-effect-fire m-auto">{name}</span>
       </div>
       <div>
         <button className="w-full cursor-pointer px-3 py-2 rounded-lg mb-0.5 last:mb-0 transition-all ease-out duration-300 hover:bg-gray-900">

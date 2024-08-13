@@ -1,6 +1,7 @@
 import Card from "./Card";
 import { expenses } from "./constants";
 import ExpenseItem from "./ExpenseItem";
+import NewExpense from "./NewExpense/NewExpense";
 
 const ExpenseTracker = () => {
 
@@ -9,6 +10,7 @@ const ExpenseTracker = () => {
       <div className="py-5 px-4 w-full flex items-center">
         <span className="text-white text-xl m-auto">Expense Tracker</span>
       </div>
+      <NewExpense />
       <Card className="w-[60%] h-[80%] bg-gradient-to-tl from-[#3333331a] to-[#4d4d4d23] flex justify-center items-center flex-col">
         <ExpenseItem
           title={expenses[0].title}

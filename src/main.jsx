@@ -7,8 +7,13 @@ import App from './App.jsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  //   <Toaster position="bottom-center" />
+  //   <App />
+  // </React.StrictMode>,
+
+  <>
     <Toaster position="bottom-center" />
     <App />
-  </React.StrictMode>,
+  </>
 )

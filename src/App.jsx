@@ -7,7 +7,14 @@ import ReactMinorProjects from "./components/AppBody/Content/React/MinorProjects
 import JsMinorProjects from "./components/AppBody/Content/JavaScript/MinorProjects";
 import JsMajorProjects from "./components/AppBody/Content/JavaScript/MajorProjects";
 import ExpenseTracker from "./components/AppBody/Content/React/MinorProjects/1.ExpenseTracker";
-import ReactConcepts from "./components/AppBody/Content/React/MinorProjects/Assignment - React Concepts";
+import ReactMajorProjects from "./components/AppBody/Content/React/MajorProjects";
+import SwiggyDashboard from "./components/AppBody/Content/React/MajorProjects/Swiggy";
+import YoutubeDashboard from "./components/AppBody/Content/React/MajorProjects/Youtube";
+import NetflixDashboard from "./components/AppBody/Content/React/MajorProjects/Netflix";
+import TicTacToeDashboard from "./components/AppBody/Content/React/MajorProjects/TicTocToe";
+import TodoDashboard from "./components/AppBody/Content/React/MajorProjects/Todo";
+import SwiggyBody from "./components/AppBody/Content/React/MajorProjects/Swiggy/SBody";
+import ReactSkills from "./components/AppBody/Content/React/MinorProjects/2.ReactSkillsAssignment";
 
 export default function App() {
 
@@ -49,14 +56,40 @@ export default function App() {
           element: <ExpenseTracker />
         },
         {
-          path: "/ReactDashboard/minorProjects/ReactConcepts/:projectId",
-          element: <ReactConcepts />
+          path: "/ReactDashboard/minorProjects/ReactSkills/:projectId",
+          element: <ReactSkills />
         },
         {
           path: "/ReactDashboard/majorProjects",
-          element: <ReactMinorProjects />
+          element: <ReactMajorProjects />
         }
       ]
+    },
+    {
+      path: "/ReactDashboard/majorProjects/Swiggy/:projectId",
+      element: <SwiggyDashboard />,
+      children: [
+        {
+          path: "/ReactDashboard/majorProjects/Swiggy/:projectId/",
+          element: <SwiggyBody />
+        }
+      ]
+    },
+    {
+      path: "/ReactDashboard/majorProjects/Youtube/:projectId",
+      element: <YoutubeDashboard />
+    },
+    {
+      path: "/ReactDashboard/majorProjects/Netflix/:projectId",
+      element: <NetflixDashboard />
+    },
+    {
+      path: "/ReactDashboard/majorProjects/TicTocToe/:projectId",
+      element: <TicTacToeDashboard />
+    },
+    {
+      path: "/ReactDashboard/majorProjects/ToDos/:projectId",
+      element: <TodoDashboard />
     }
   ]);
 
